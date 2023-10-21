@@ -1,0 +1,252 @@
+body{
+    background: url('./assets/bg-texture.png');
+}
+.contact__content__page{
+    position: relative;
+    top: 21vh;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    background-color: #6cd3d5;
+    height: 55vh;
+    margin: 1.4rem auto;
+    gap: 2.4rem;
+    border-radius: 1.3rem;
+    /* background: url('./assets/bg-texture.png'); */
+}
+.contact__content__page .contact__page__left__side{
+    border: 5px solid green;
+    width:40%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.contact__content__page .contact__page__left__side .upper__section__img img{
+    height: 28rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    border: 0.4rem solid rgb(216, 216, 19);
+    margin: 0.2rem 4.3rem;
+    width: 19rem;
+}
+.contact__content__page .contact__page__left__side .lower__section__content{
+    width: 80%;
+}
+.contact__content__page .contact__page__left__side .lower__section__content .lower__section__heading{
+    font-size: 2.3rem;
+    font-size: 600;
+    color: rgb(221, 221, 72);
+    text-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    text-align: center;
+}
+.contact__content__page .contact__page__left__side .lower__section__content .lower__section__para{
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+.contact__content__page .contact__page__left__side .lower__section__content .lower__section__para span{
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+    color: yellow;
+}
+.contact__content__page .contact__page__left__side .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+}
+.contact__content__page .contact__page__left__side .contacts .contact1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact__content__page .contact__page__left__side .contacts .contact1 .contact__number{
+    margin-left: 0.5rem;
+}
+.contact__content__page .contact__page__left__side .contacts .contact2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact__content__page .contact__page__left__side .contacts .contact2 .email__address{
+    margin-left: 0.5rem;
+}
+.contact__content__page .contact__page__left__side .contact__links{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.6rem;
+    margin-top: 0.9rem;
+}
+.contact__content__page .contact__page__left__side .contact__links i{
+    padding: 0.3rem;
+    background-color: #eb8383;
+    font-size: 1.4rem;
+    border-radius: 2.3rem;
+}
+.contact__content__page .contact__page__right__side{
+    height: 90%;
+    width: 46%;
+    border-radius: 1rem;
+    border: 0.4rem solid rgb(216, 216, 19);
+}
+.contact__content__page .contact__page__right__side .form__filling{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.4rem;
+    justify-content: flex-start;
+    height: 90%;
+    /* margin: auto; */
+}
+.contact__content__page .contact__page__right__side .form__filling .client__name{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: space-between;
+}
+.contact__content__page .contact__page__right__side .form__filling .client__name input{
+    padding: 0.4rem 0.3rem;
+    border: 1px solid #aba1a1;
+    border-radius: 0.6rem;
+    outline:0;
+    width: 90%;
+    height: 1.4rem;
+}
+
+.contact__content__page .contact__page__right__side .form__filling .client__email input{
+    padding: 0.4rem 0.3rem;
+    border: 1px solid #aba1a1;
+    border-radius: 0.6rem;
+    outline:0;
+    width: 90%;
+    height: 1.4rem;
+    margin-top: 0.4rem;
+}
+.contact__content__page .contact__page__right__side .form__filling textarea{
+    height: 8rem;
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+    border: 1px solid #aba1a1;
+}
+.contact__content__page .contact__page__right__side .form__filling button{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    margin-top: 1.5rem;
+    padding: 0.8rem 0.9rem;
+    background-color: yellow;
+    color: #000;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 500ms ease-in-out
+}
+.contact__content__page .contact__page__right__side .form__filling button:hover{
+    box-shadow: 0 1rem 2rem rgb(216, 216, 19);
+    transform: translateY(-1rem);
+    cursor: pointer;
+}
+.contact__content__page .contact__page__left__side .contacts a{
+    color: aliceblue;
+    transition: all 500ms ease-in-out;
+}
+.contact__content__page .contact__page__left__side .contacts a:hover{
+    color: yellow;
+    text-shadow: 0 11rem 2rem rgba(0,0,0,0.7);
+}
+@media screen and (max-width:1024px){
+    .contact__content__page{
+        background: none;
+        border: none;
+    }
+    .contact__content__page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14rem;
+        max-width: 100vw;
+    }
+    .contact__content__page .contact__page__left__side .upper__section__img{
+        width: 30vw;
+    }
+    .contact__content__page .contact__page__left__side .upper__section__img img{
+        margin-left: 0.1rem;
+        object-fit: contain;
+        border: none;
+        border-radius: 3rem;
+        width: 19rem;
+    }
+    .contact__content__page .contact__page__right__side{
+        width: 80vw;
+        height: 53vh;
+    }
+
+}
+
+/*------------  Responsive design for Mobiles  -----------*/
+@media screen and (max-width:650px){
+    body{
+        background: none;
+    }
+    .contact__content__page{
+        background: none;
+        border: none;
+    }
+    .contact__content__page{
+        margin: 20.2rem 1.2rem;
+    }
+    .contact__content__page .contact__page__left__side{
+        width: 100vw;
+        margin-left: 2.2rem;
+        border: none;
+    }
+    .contact__content__page .contact__page__left__side .upper__section__img{
+        margin-right: 12.2rem;
+        border: none;
+    }
+    .contact__content__page .contact__page__left__side .lower__section__content{
+        margin-top: 2.2rem;
+    }
+    .contact__content__page .contact__page__left__side .lower__section__heading{
+        font-size: 1.4rem;
+    }
+    .contact__content__page .contact__page__left__side .lower__section__para{
+        font-size: 0.8rem;
+        margin: 0.9rem auto;
+    }
+    .contact__content__page .contact__page__left__side  .contacts .contact1 .contact__number{
+        font-size: 0.9rem;
+    }
+    .contact__content__page .contact__page__left__side .contacts a{
+        font-size: 0.9rem;
+    } 
+    .contact__content__page .contact__page__left__side .contact__links{
+        margin-top: 2.2rem;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 1.2rem;
+    }
+    .contact__content__page .contact__page__right__side{
+        margin-top: 5.2rem;
+        width: 93vw;
+        margin-left: 5.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .contact__content__page .contact__page__right__side .form__filling textarea{
+        margin: auto;
+
+    }
+    .contact__content__page .contact__page__right__side .form__filling button{
+
+    }
+
+
+}

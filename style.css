@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: #1e212c;
+    color: rgb(237, 241, 245);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 15vh;
+    z-index: 9;
+    width: 100vw;
+    border-bottom: 2px solid black;
+}
+.nav__container .nav___top__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 0.3rem;
+    padding-top: 0.8rem;
+}
+.nav__container .nav___top__text i:nth-child(1){
+    margin-right: 3rem;
+    font-size: 2.4rem;
+    color: red;
+}
+.nav__container .nav___top__text i:nth-child(3){
+    margin-left: 3rem;
+    color: red;
+    font-size: 2.4rem;
+}
+.nav__container .nav___top__text .nav__top__text__para{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(233, 138, 138);
+    text-shadow: 0 1rem 2rem rgb(255, 28, 28);
+}
+.nav__container .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav__container .links .nav__links__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__container .links .nav__links__container li a{
+    margin-left: 2.7rem;
+    color: rgb(205, 207, 208);
+    transition: all 500ms ease-in-out;
+}
+.nav__container .links .nav__links__container li a:hover{
+    color: #fff;
+}
+.nav__container .links .nav__title{
+    transition: all 500ms ease-in-out;
+}
+.nav__container .links .nav__title:hover{
+    text-shadow: 0 1rem 2rem rgb(255, 242, 0);
+}
+.nav__container .links .nav__title p{
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(192, 220, 30);
+    transition: all 500ms ease-in-out;
+}
+.nav__container .links .nav__title p:hover{
+    color: rgb(251, 255, 0);
+    text-shadow: 0 1rem 2rem rgb(255, 242, 0);
+}
+.nav__container .links .nav__links__container{
+    margin-right: 1.3rem;
+}
+.nav__container .menu_btn_bar{
+    display: none;
+}
+.nav__container .close_btn{
+    display: none;
+}
+.introduction{
+    position:relative;
+    top: 21vh;
+    /* border: 4px solid green; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction .welcome__Greetings{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgb(233, 233, 51);
+    text-decoration: underline;
+    text-shadow: 0 1rem 2rem rgba(208, 213, 39, 0.5);
+}
+.introduction .our__misson__container{
+    /* border: 4px solid green; */
+    margin-top: 3.2rem;
+}
+.introduction .our__misson__container .our__mission__heading{
+    font-size: 3.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(233, 233, 51);
+    text-shadow: 0 1rem 2rem rgba(208, 213, 39, 0.5);
+}
+.introduction .our__misson__container .our__mission__main{
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+}
+.introduction .ourvision{
+    margin-top: 0.4rem;
+    /* border: 4px solid green; */
+    width: 80%;
+}
+.introduction .ourvision .our__vision__heading{
+    font-size: 3.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(233, 233, 51);
+    text-shadow: 0 1rem 2rem rgba(208, 213, 39, 0.5);
+    text-align: center;
+}
+.introduction .ourvision .our__vision__para{
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+}
+.introduction img{
+    margin-top: 0.4rem;
+    height: 45rem;
+    width: 90vw;
+    margin-top: 1.2rem;
+    box-shadow: 0 1rem 2rem rgb(39 180 213 / 19%);
+    border-radius: 1.3rem;
+}
+.introduction .some__intro{
+    font-size: 1.2rem;
+    width: 92vw;
+    margin-top: 3.4rem;
+}
+.class1{
+    position: relative;
+    top: 23vh;
+}
+.class1 .class1__heading{
+    text-align: center;
+    color: rgb(233, 233, 51);
+    text-shadow: 0 1rem 2rem rgba(208, 213, 39, 0.5);
+    font-size: 3.3rem;
+}
+.class1 .class1__para{
+    width: 92vw;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+.class1 video{
+    width: 93vw;
+    height: 90vh;
+}
+.about{
+    position: relative;
+    top: 11.3rem;
+}
+.about .little__about{
+    font-size: 3.3rem;
+    font-weight: 500;
+    color: rgb(233, 233, 51);
+    text-shadow: 0 1rem 2rem rgba(208, 213, 39, 0.5);
+    text-align: center;
+}
+.about .little__about__para1{
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+    color: rgb(168, 173, 178);
+    width: 85vw;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 4.5rem;
+}
+.about .little__about__para2{
+    margin-top: 1.7rem;
+    margin-left: 3.5rem;
+    width: 90vw;
+    font-size: 1.2rem;
+}
+.our__work{
+    position: relative;
+    top: 11.3rem;
+}
+.our__work .our__work__cards__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1.2rem;
+    gap: 1.2rem;
+}
+.our__work .our__work__title{
+    font-size: 3.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(233, 233, 51);
+    text-shadow: 0 1rem 2rem rgba(208, 213, 39, 0.5);
+    margin-top: 0.6rem;
+}
+.our__work .our__work__cards__container img{
+    height: 20rem;
+    object-position: center;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 1.2rem;
+    margin-top: 0.8rem;
+}
+.our__work .our__work__cards__container article{
+    /* border: 2px solid rgb(255, 255, 0); */
+}
+.our__work .our__work__cards__container h3{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: underline;
+    color: rgb(211, 217, 135);
+    margin-top: 0.6rem;
+}
+.our__work .our__work__cards__container p{
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
+.our__work .our__work__cards__container a{
+    border: 2px solid yellow;
+    padding: 0.4rem 0.7rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    border-radius: 0.7rem;
+    background: rgb(184, 184, 49);
+}
+.our__work .our__work__cards__container a:hover{
+    background: rgb(238, 238, 62);
+}
+.footer{
+    position: relative;
+    top: 15rem;
+    border-top: 2px solid yellowgreen;
+}
+.footer .footer__upper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3.5rem;
+    padding-top: 2rem;
+}
+.footer .footer__upper p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.footer .footer__upper h2 span{
+    color: rgb(215, 215, 56);
+}
+.footer .footer__upper h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.footer .footer__lower p{
+    text-align: center;
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
+/*-----------------Responsive Design For Tablets-----------------------*/
+
+@media screen and (max-width:1024px){
+    .nav__container{
+        /* revise */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 15vh;
+        width: 100vw;
+        /* revise */
+    }
+    .nav__container .nav___top__text p{
+        text-align: center;
+    }
+    .nav__container .links .nav__links__container{
+        margin-left: 16.2rem;
+    }
+    .nav__container .links{
+        margin-top: -0.1rem;
+    }
+    .nav__container .links .nav__links__container{
+        font-size: 1.2rem;
+    }
+    .introduction .welcome__Greetings{
+        margin: 5.7rem;
+        font-size: 4.2rem;
+    }
+    .introduction .our__misson__container{
+        margin-top: -2.2rem;
+    }
+    .introduction .our__misson__container .our__mission__main{
+        width: 73vh;
+        text-align: center;
+    }
+    .introduction .ourvision{
+        margin-top: 1.2rem;
+    }
+    .introduction .ourvision p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .introduction img{
+        margin-top: 2.3rem;
+        width: 90vw;
+        height: 75vh;
+    }
+    .introduction .some__intro{
+        margin-top: 2.7rem;
+        width: 90vw;
+        text-align: center;
+    }
+    .class1{
+        margin-top: 1.6rem;
+    }
+    .class1 .class1__heading{
+        font-size: 2.3rem;
+    }
+    .class1 video{
+        height: 75vh;
+        width: 92vw;
+        margin-top: 2.6rem;
+    }
+    .about .little__about{
+        font-size: 2.5rem;
+    }
+    .about .little__about__para1{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .about .little__about__para2{
+        font-size: 1.1rem;
+    }
+    .our__work{
+        margin-top: 2.3rem;
+    }
+    .our__work .our__work__title{
+        font-size: 2.3rem;
+    }
+    .our__work .our__work__cards__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3.3rem;
+    }
+    .our__work .our__work__cards__container article h3{
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
+    .footer .footer__upper p{
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
+    .footer .footer__upper h2{
+        font-size: 1.6rem;
+    }
+    .footer .footer__lower p{
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Responsive design for mobiles */
+
+@media screen and (max-width:650px){
+    .nav__container .links .nav__links__container{
+        display: none;
+    }
+    .nav__container .menu_btn_bar{
+        display: block;
+    }
+    /* .nav__container .close_btn{
+        display: none;
+    } */
+    .nav__container{
+        width: 100vw;
+        height: 15vh;
+    }
+    .nav__container .nav___top__text i{
+        font-size: 1rem;
+    }
+    .nav__container .nav___top__text .nav__top__text__para{
+        font-size: 0.7rem;
+    }
+    .nav__container .links .nav__title p{
+        font-size: 0.9rem;
+    }
+    .introduction{
+        margin-top: -5.8rem;
+    }
+    .introduction .welcome__Greetings{
+        font-size: 1.4rem;
+    }
+    .introduction .our__misson__container{
+        margin-top: -3.3rem;
+    }
+    .introduction .our__misson__container .our__mission__heading{
+        font-size: 1.2rem;
+    }
+    .introduction .our__misson__container .our__mission__main{
+        font-size: 1rem;
+        width: 83vw;
+    }
+    .introduction .ourvision{
+        margin-top: 2.1rem;
+    }
+    .introduction .ourvision .our__vision__heading{
+        font-size: 1.2rem;
+    }
+    .introduction .ourvision .our__vision__para{
+        font-size: 1rem;
+    }
+    .introduction img{
+        height: 17rem;
+        width: 97vw;
+    }
+    .introduction .some__intro{
+        font-size: 1rem;
+        width: 80vw;
+    }
+    .class1 .class1__heading{
+        font-size: 1.4rem;
+        width: 80vw;
+        margin: auto;
+    }
+    .class1 .class1__para{
+        font-size: 1rem;
+        width: 80vw;
+        margin: 1.4rem auto;
+    }
+    .class1 video{
+        margin-left: 1.6rem;
+        display: inline-block;
+        margin-top: -0.2rem;
+    }
+    .about{
+        margin-top: -6.9rem;
+    }
+    .about .little__about{
+        font-size: 1.4rem;
+    } 
+    .about .little__about__para1{
+        font-size: 1rem;
+        margin: 1.3rem auto;
+    }
+    .about .little__about__para2{
+        margin: 0.5rem auto;
+        font-size: 1rem;
+        width: 80vw;
+        text-align: center;
+    }
+    .our__work .our__work__title{
+        font-size: 1.4rem;
+    }
+    .our__work .our__work__cards__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4.2rem;
+    }
+    .our__work .our__work__cards__container article img{
+        height: 14rem;
+    }
+    .our__work .our__work__cards__container article h3{
+        font-size: 1.2rem;
+    }
+    .our__work .our__work__cards__container article p{
+        font-size: 1rem;
+        width: 85vw;
+        text-align: center;
+        padding-bottom: 2.2rem;
+    }
+    .footer .footer__upper{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+    .footer .footer__upper p{
+        font-size: 1rem;
+    }
+    .footer .footer__upper h2{
+        font-size: 1rem;
+    }
+    .footer .footer__lower p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}

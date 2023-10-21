@@ -1,0 +1,262 @@
+.faqs__container__section{
+    position: relative;
+    top: 21vh;
+}
+.faqs__container__section .faqs__container__que__ans{  /* faqs__container__que__ans*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+}
+.faqs__container__section .faqs__container__que__ans .faq1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.2rem;
+    border: 2px solid #fc0000;
+    padding-top: 0.8rem;
+    height: 10rem;
+    width: 44rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    background-color: #37154d;
+}
+.faqs__container__section .faqs__container__que__ans .faq1 i{
+    align-self: flex-start;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+}
+.faqs__container__section .faqs__container__que__ans .faq1 .faq__ans .ans{
+    color: rgb(239, 138, 65);
+    /* display: hidden; */
+}
+.faqs__container__section .faqs__container__que__ans .faq1 .faq__ans .que{
+    color: greenyellow;
+}
+.workedOn{
+    border-top: 2px solid #fc0000;
+    position: relative;
+    top: 21vh;
+}
+.workedOn h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(255, 230, 0);
+    text-shadow: 0 1rem 2rem rgb(255, 230, 0);
+    margin-top: 0.8rem;
+}
+.workedOn .complaints__list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.2rem;
+    margin-top: 2.2rem;
+}
+.workedOn .work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.workedOn .work img{
+    max-height: 15rem;
+    max-width: 19rem;
+    object-fit: contain;
+    border: 3px solid rgb(215, 235, 68);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+}
+.workedOn .work h2{
+    margin-top: 0.6rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: antiquewhite;
+    text-align: center;
+}
+.workedOn .work p{
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 0.2rem;
+}
+.working__hours{
+    position: relative;
+    top: 22vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1.2rem;
+
+}
+.working__hours .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.working__hours .address h1{
+    color: #e8dd0d;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-shadow: 0 1rem 2rem rgb(239, 138, 65);
+}
+.working__hours .address p{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.working__hours .address h3{
+    font-size: 1.2rem;
+    text-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    margin-top: 0.5rem;
+}
+.working__hours .days__of__working{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.working__hours .days__of__working span{
+    color: #fc0000;
+    font-size: 1.4rem;
+    text-shadow: 0 1rem 2rem rgba(0,0,0,0.6);
+    line-height: 1.2;
+}
+.working__hours .days__of__working li{
+    font-size: 0.9rem;
+}
+.details__on__pdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1.7rem;
+    position: relative;
+    top: 22vh;
+}
+.details__on__pdf h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e8dd0d;
+    text-shadow: 0 1rem 2rem rgba(0,0,0,0.6);
+}
+.details__on__pdf p{
+    font-size: 1.2rem;
+}
+.details__on__pdf .pdf__downloader__container{
+    margin-top: 1.5rem;
+}
+.details__on__pdf .pdf__downloader__container a{
+    cursor: pointer;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.6rem;
+    border: 2px solid yellow;
+    background-color: #c1db73;
+}
+
+/* ------------------------------------------ for tablets ---------------------------------------*/
+@media screen and (max-width:1024px){
+    .faqs__container__section{
+        margin-top: 5.2rem;
+    }
+    .faqs__container__section .faqs__container__que__ans{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    .workedOn .complaints__list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.3rem;
+    }
+    .working__hours .address{
+        font-size: 1.5rem;
+    }
+    .workedOn h1{
+        font-size: 2.1rem;
+    }
+    .working__hours p{
+        margin-top: 0.5rem;
+    }
+    .working__hours h3{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:650px){
+    .faqs__container__section .faqs__container__que__ans{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1.3rem;
+        width: 100%;
+    }
+    .faqs__container__section .faqs__container__que__ans .faq1{
+        width: 93vw;
+        margin: 0;
+        height: 13rem;
+    }
+    .faqs__container__section .faqs__container__que__ans article i{
+        display: none;
+    }
+    .faqs__container__section .faqs__container__que__ans article .faq__ans .que{
+        font-size: 1.2rem;
+    }
+    .faqs__container__section .faqs__container__que__ans article .faq__ans .ans{
+        font-size: 1rem;
+    }
+    .workedOn h1{
+        font-size: 1.2rem;
+        width: 73vw;
+    }
+    .workedOn .complaints__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .workedOn .complaints__list .work h2{
+        font-size: 1.2rem;
+    } 
+    .workedOn .complaints__list .work p{
+        font-size: 0.8rem;
+    }
+    .working__hours{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .working__hours .address{
+        margin-top: 3.4rem;
+    }
+    .working__hours .address h1{
+        font-size: 1.2rem;
+    }
+    .working__hours .address p,h3{
+        font-size: 1rem;
+    }
+    .working__hours .days__of__working{
+        margin-top: 0.4rem;
+    }
+    .working__hours .days__of__working{
+        font-size: 0.9rem;
+    }
+    .working__hours .days__of__working span{
+        font-size: 1.1rem;
+    }
+    .details__on__pdf{
+        margin-top: 2rem;
+    }
+    .details__on__pdf .details__heading{
+        font-size: 1.2rem;
+        width: 90vw;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+    .details__on__pdf .details__para{
+        font-size: 0.8rem;
+    }
+    .details__on__pdf .pdf__downloader__container{
+        margin-top: 0.7rem;
+    }
+
+}
